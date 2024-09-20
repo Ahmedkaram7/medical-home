@@ -44,6 +44,19 @@ body {
     width: 1170px;
   }
 }
+/* #topBtn {
+  position: fixed;
+  right: 37px;
+  bottom: 32px;
+  padding: 12px 10px;
+  border-radius: 8px;
+  color: #0e9dc8;
+  font-size: 38px;
+  transition: background-color 0.3s;
+} */
+/* #topBtn:hover {
+  background-color: #447e9b42;
+} */
 
 .scroller {
   position: fixed;
@@ -54,6 +67,7 @@ body {
   height: 10px;
   border-radius: 2px;
 }
+
 header {
   background-image: url(../image/bg\ header\ replace.png);
   background-size: cover;
@@ -70,54 +84,27 @@ header .head .nav {
   align-items: center;
   min-height: 70px;
 }
-
-@media (max-width: 992px) {
-  header .head .nav {
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding-bottom: 20px;
-  }
+.container .nav .logo {
+  flex: 1;
 }
-
-header .head .nav .nav-nav {
-  display: flex;
-  align-items: center;
-}
-
-@media (max-width: 992px) {
-  header .head .nav .nav-nav {
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
-.container .nav-nav .title p {
+.container .nav .logo p {
   font-size: 26px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-@media (max-width: 992px) {
-  .container .nav-nav .title p {
-    margin-top: 20px;
-  }
-}
-
-.container .nav-nav .title p::first-letter {
+.container .nav .logo p::first-letter {
   color: var(--main-color);
 }
 
+header .head .nav .links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 header .head .nav .link {
-  padding-left: 80px;
+  margin-right: 40px;
 }
-
-@media (max-width: 992px) {
-  header .head .nav .link {
-    padding-left: 0;
-  }
-}
-
 header .head .nav .link a {
   padding: 20px;
   text-decoration: none;
@@ -129,30 +116,13 @@ header .head .nav .link a {
   transition: 0.3s;
 }
 
-@media (max-width: 992px) {
-  header .head .nav .link a {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  header .head .nav .link .nave-link {
-    border-bottom: 1px solid red;
-  }
-
-  header .head .nav .link a:last-child {
-    margin-bottom: 50px;
-  }
-}
-
 header .head .nav .link .nave-link:hover {
   background-color: var(--main-color);
   border-radius: 5px;
   color: white;
 }
 
-header .head .nav .get-start a {
+header .nav .links .btn-start {
   padding: 20px;
   text-decoration: none;
   color: white;
@@ -165,18 +135,48 @@ header .head .nav .get-start a {
   border: 1px solid #ccc;
   transition: 0.3s;
 }
-
-header .head .nav .get-start:hover a {
+header .nav .links .btn-start:hover {
   background-color: white;
   color: black;
 }
+header .nav i {
+  font-size: 30px;
+  color: var(--main-color);
+  display: none;
+}
 
 @media (max-width: 992px) {
-  header .head .nav .get-start {
+  header .head .nav .links {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 70px;
+    flex-direction: column;
+    background-color: rgb(255 255 255 / 77%);
+    overflow: hidden;
+  }
+  header .head .nav .link {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+  header .head .nav .link a {
+    border-bottom: 1px solid #ccc;
+    padding: 26px;
+  }
+  header .nav .links .btn-start {
+    margin-top: 20px;
     margin-bottom: 20px;
+  }
+
+  header .nav i {
+    display: block;
   }
 }
 
+/* end navbar */
 .container .left-text-block {
   display: grid;
   grid-template-columns: 400px;
@@ -188,7 +188,7 @@ header .head .nav .get-start:hover a {
 
 .container .left-text-block .title h1 {
   font-size: 45px;
-  color: white;
+  color: #076bb8;
   font-weight: normal;
   padding-bottom: 15px;
   margin: 0;
@@ -207,7 +207,6 @@ header .head .nav .get-start:hover a {
 .container .left-text-block .text {
   font-size: 16px;
   color: white;
-  /* font-weight: normal; */
   margin-bottom: 40px;
   line-height: 1.5;
 }

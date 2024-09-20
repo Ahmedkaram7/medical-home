@@ -22,33 +22,43 @@
   <body>
     <!-- scroll top in page -->
     <div class="scroller"></div>
+    <!-- button to Top page -->
+    <!-- <span id="topBtn"></span> -->
     <!-- header -->
     <header>
+
       <div class="head">
         <div class="container">
+
           <div class="nav">
-            <div class="nav-nav">
-              <div class="title">
-                <p>Medical</p>
-              </div>
-              <div class="link">
-                <a href="#hom" class="nave-link">home</a>
-                <a href="#about" class="nave-link">about us</a>
-                <a href="#servic" class="nave-link">services</a>
-                <a href="#port" class="nave-link">portfolio</a>
-                <a href="#blo" class="nave-link">blog</a>
-                <a href="#contct" class="nave-link">contact</a>
-              </div>
+
+            <div class="logo">
+              <p>Medical</p>
             </div>
-            <div class="get-start">
-              <a href="#">get start</a>
+
+            <div class="links">
+              <div class="link">
+                <a id="home" href="#" class="nave-link">home</a>
+                <a id="about" href="#" class="nave-link">about us</a>
+                <a id="services" href="#" class="nave-link">services</a>
+                <a id="portfolio" href="#" class="nave-link">portfolio</a>
+                <a id="blog" href="#" class="nave-link">blog</a>
+                <a id="contact" href="#" class="nave-link">contact</a>
+              </div>
+
+              <a id='btn' href="#" class="btn-start">get start</a>
+
+            </div>
+            <div id="toggle">
+              <i class="fa-solid fa-bars"></i>
             </div>
           </div>
+
         </div>
       </div>
       <!-- end header -->
       <!-- start body in header -->
-      <div class="container" id="hom">
+      <div class="container" id="target-home">
         <div class="left-text-block">
           <div class="title">
             <h1>The best doctors in <span>Medicine!</span></h1>
@@ -67,7 +77,7 @@
     </header>
     <!-- end header -->
     <!-- about -->
-    <div class="about" id="about">
+    <div class="about" id="target-about">
       <div class="container">
         <div class="about-my">
           <div class="text">
@@ -87,7 +97,7 @@
     </div>
     <!-- end about -->
     <!-- services -->
-    <div class="services" id="servic">
+    <div class="services" id="target-services">
       <div class="card-one">
         <div class="overlay">
           <div class="text">
@@ -126,7 +136,7 @@
     <!-- end services -->
 
     <!-- services -->
-    <div class="portfolio" id="servic">
+    <div class="portfolio" id="target-portfolio">
       <div class="container">
         <div class="sections">
           <div class="section section-one">
@@ -195,7 +205,7 @@
     <!-- end portfolio -->
 
     <!-- galary -->
-    <div class="gallery" id="port">
+    <div class="gallery" id="target-gallery">
       <div class="container">
         <div class="boxes">
           <div class="box">
@@ -234,7 +244,7 @@
     <!--end gallery -->
 
     <!-- blog -->
-    <div class="blog" id="blo">
+    <div class="blog" id="target-blog">
       <div class="text">
         <i class="fa-solid fa-quote-left"></i>
         <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
@@ -270,7 +280,7 @@
     <!-- end blog -->
 
     <!-- start contact us -->
-    <div class="contact" id="contct">
+    <div class="contact" id="target-contact">
       <div class="container">
         <p>contact us</p>
         <form>
