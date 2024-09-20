@@ -45,6 +45,15 @@ body {
   }
 }
 
+.scroller {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  background-color: var(--main-color);
+  height: 10px;
+  border-radius: 2px;
+}
 header {
   background-image: url(../image/bg\ header\ replace.png);
   background-size: cover;
@@ -487,7 +496,6 @@ header .head .nav .get-start:hover a {
 }
 
 @keyframes flashing {
-
   0%,
   40% {
     opacity: 1;
@@ -565,7 +573,6 @@ header .head .nav .get-start:hover a {
 }
 
 @media (max-width: 568px) {
-
   .blog .image::after,
   .blog .image::before {
     display: none;
@@ -598,7 +605,6 @@ header .head .nav .get-start:hover a {
 }
 
 @media (max-width: 520px) {
-
   .contact .container form input,
   .contact .container form textarea {
     width: 300px;
